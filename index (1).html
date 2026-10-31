@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>🌤️ Weather App</h1>
+
+    <form id="search-form">
+      <input
+        type="text"
+        id="city-input"
+        placeholder="Enter a city (e.g. Kolkata)"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Search</button>
+    </form>
+
+    <p id="message" class="message"></p>
+
+    <section id="current" class="card hidden">
+      <h2 id="location"></h2>
+      <div class="main-temp">
+        <span id="icon" class="icon"></span>
+        <span id="temp"></span>
+      </div>
+      <p id="description" class="description"></p>
+
+      <div class="details">
+        <div><span>Feels like</span><strong id="feels"></strong></div>
+        <div><span>Humidity</span><strong id="humidity"></strong></div>
+        <div><span>Wind</span><strong id="wind"></strong></div>
+      </div>
+    </section>
+
+    <section id="forecast-section" class="hidden">
+      <h3>5-Day Forecast</h3>
+      <div id="forecast" class="forecast"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
